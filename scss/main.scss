@@ -191,6 +191,17 @@ li.links{
 .menu-btn:checked ~ .menu{
     display: block;
 }
+#menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(45deg);
+    top: 0;
+}
+#menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(-45deg) ;
+    top: 0;
+}
+#menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
 
 /*main styles*/
 main{
