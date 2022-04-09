@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 /*fixed header styles*/
 .promo-banner{
@@ -8,13 +9,12 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
-    font-family: 'Noto Sans', sans-serif;
     background: #9C472E;
     color: #ffffff;
 }
 .promo-banner p{
     margin-top: 0.75rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .promo-banner a{
     margin-left: 0.5em;
@@ -55,7 +55,7 @@ body{
 ul.menu{
     padding-left: 0;
 }
-@media (min-width: 600px){
+@media (min-width: 700px){
     .mobile-nav{
         display: block;
 
@@ -68,8 +68,9 @@ ul.menu{
         display: flex;
         justify-content: flex-end;
         margin-right: 2em;
+        float: right;
     }
-    .mobile-nav .menu .links{
+    .mobile-nav .menu li{
         display: block;
         float: left;
     }
@@ -98,7 +99,6 @@ li.links{
     text-decoration: none;
     padding: 0.5em;
     display: inline-block;
-    font-family: 'Noto Sans',sans-serif;
     color: #000000;
     font-size: 0.875rem;
 }
@@ -108,7 +108,7 @@ li.links{
 .menu li.get-started{
     margin-top: 0.5em;
 }
-@media (min-width: 600px){
+@media (min-width: 700px){
     .menu li.get-started{
         margin-top: 0;
     }
@@ -128,7 +128,7 @@ li.links{
 .menu li.login{
     margin-top: 0.5em;
 }
-@media (min-width:600px){
+@media (min-width:700px){
     .menu li.login{
         margin-top: 0;
     }
@@ -158,8 +158,9 @@ li.links{
     height: 2px;
     width: 20px;
     position: relative;
+    
 }
-@media (min-width: 600px){
+@media (min-width: 700px){
     .menu-icon .nav-icon{
         display:none;
     }
@@ -207,7 +208,6 @@ main{
 h1{
     color:#ffffff;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
     margin-bottom: 0;
 }
 @media (min-width: 900px){
@@ -218,7 +218,6 @@ h1{
 #home a{
     display: inline-block;
     text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     color:#ffffff;
     border: 2px solid #9C472E;
@@ -240,13 +239,6 @@ h1{
 }
 h2{
     margin: 0;
-    font-family: 'Fjalla One', sans-serif;
-}
-h3{
-    font-family: 'Noto Sans', sans-serif;
-}
-.text-container p{
-    font-family: 'Noto Sans', sans-serif;
 }
 .flex-container{
     padding-left: 2em;
@@ -272,7 +264,6 @@ h3{
 #how-it-works a{
     display: inline-block;
     text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     color: #ffffff;
     border: 2px solid #9C472E;
@@ -293,6 +284,7 @@ h3{
 h2{
     text-align: center;
     padding: 1em;
+    font-weight: bolder;
 }
 #choose-plan img{
     max-width: 100%;
@@ -303,7 +295,6 @@ h2{
 #choose-plan ul{
     list-style: none;
     text-align: center;
-    font-family: 'Fjalla One', sans-serif;
     padding-left: 0;
 }
 #choose-plan li{
@@ -333,12 +324,15 @@ h2{
         flex-direction: column;
     }
 }
+.label{
+    position: absolute;
+    
+}
 /*footer*/
 footer{
     background: #ffe0c2;
 }
 footer h3{
-    font-family: 'Fjalla One', sans-serif;
     margin-bottom: 0.1em;
     padding-top: 1em; 
 }
@@ -346,9 +340,6 @@ footer h3{
     text-align: center;
 }
 /*contact*/
-section.contact-section{
-    font-family: 'Noto Sans', sans-serif;
-}
 .contact-nav ul{
     margin-top: 0.5rem;
     padding-left:0;
@@ -378,7 +369,6 @@ section.contact-section{
     margin-bottom: 0;
 }
 .newsletter p{
-    font-family: 'Noto Sans', sans-serif;
     margin: 0.2em;
     font-size: 0.75em;
 }
@@ -436,7 +426,6 @@ nav.footer-nav{
 }
 .footer-nav li{
     display: inline-block;
-    font-family: 'Noto Sans', sans-serif;
     color:#000000;
     font-size: 0.7em;
 }
