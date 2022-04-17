@@ -11,6 +11,7 @@ body{
     top: 0;
     background: #9C472E;
     color: #ffffff;
+    z-index: 3;
 }
 .promo-banner p{
     margin-top: 0.75rem;
@@ -302,6 +303,7 @@ h2{
     height: auto;
     border-radius: 10%;
     margin: 1em;
+    z-index: auto;
 }
 #choose-plan ul{
     list-style: none;
@@ -323,21 +325,52 @@ h2{
     margin: auto;
     }
 }
-@media(min-width: 700px){
-    #choose-plan li{
-        display: flex;
-        align-items: center;
+@media(min-width: 740px){
+    #choose-plan .li-1{
+       flex: 50%;
+    }
+    #choose-plan .li-2{
+        flex: 50%;
+    }
+    #choose-plan .li-3{
+        flex: 50%;
+    }
+    #choose-plan .li-4{
+        flex: 50%;
     }
 }
-@media(min-width: 1024px){
-    #choose-plan li{
-        display: flex;
-        flex-direction: column;
-    }
+@media (min-width: 987px){
+    #choose-plan .li-1{
+        flex: 25%;
+     }
+     #choose-plan .li-2{
+         flex: 25%;
+     }
+     #choose-plan .li-3{
+         flex: 25%;
+     }
+     #choose-plan .li-4{
+         flex: 25%;
+     }
 }
-.label{
+a.plan-link{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+.save-promo{
     position: absolute;
-    
+    top: 1.5em;
+    left: 1.6em;
+    padding: 0.2em 0.5em;
+    background: #eea793;
+    border-radius: 20px;
+}
+.plan-label{
+    font-size: larger;
 }
 /*footer*/
 footer{
